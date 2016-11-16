@@ -4,9 +4,33 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Portal Do Aluno</title>
+
+         <link href="css/bootstrap.min.css" rel="stylesheet">	
+       
+        <script src="js/angular.js"></script>
+        <script src="js/ngMask.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/services.js"></script>
+	
+
     </head>
-    <body>
-    <h1>teste 123</h1>
-        <script type="text/javascript" src="cordova.js"></script>
+    <body ng-app="app" ng-controller="appController">
+ 
+       
+
+						<div class="container" style="width: 300px" align="center" >
+
+		      			<form class="form-signin">		
+		        		<h2 class="form-signin-heading">Acessar</h2>
+		        		<label for="inputEmail" class="sr-only">Email </label>
+		        		<input type="text" ng-model="professor.email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+		        		<label for="inputPassword" class="sr-only">Senha</label>
+		        		<input type="password" ng-model="professor.senha" id="inputPassword" class="form-control" placeholder="Senha" required>
+		        		<br>
+		        		<button class="btn btn-lg btn-primary btn-block" ng-click="acessar(professor)" type="button">Entrar</button>
+      </form>
+      
+    </div> 
+
     </body>
 </html>

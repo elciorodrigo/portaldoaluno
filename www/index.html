@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
       
         <title>Portal Do Aluno</title>
 
@@ -14,58 +15,53 @@
         <script src="js/services.js"></script>
         <link href="css/style.css" rel="stylesheet">
 
-	
-
     </head>
-    <body ng-app="app" ng-controller="appController">
+        <body ng-app="app" ng-controller="appController">
 
-	  <div class="container-fluid">
-        
-        <div class="page-header">
+
+
+    	  <div class="container-fluid">
+             <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                  <div class="page-header">
                     <h1 align="center">
                         Portal do Aluno
                     </h1>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
             </div>
-            <div class="col-md-4">
-              
-                <form role="form">
-                    <div class="form-group">
-                         
+                  
+                    <form role="form">
+                        <div class="form-group">
+                             
+                            
+                            <input type="text" placeholder="Aluno:" class="form-control" id="exampleInputEmail1" />
+                        </div>
+                        <div class="form-group">
+                             
+                           
+                            <input type="password" placeholder="Senha:" class="form-control" id="exampleInputPassword1" />
+                        </div>
                         
-                        <input type="text" placeholder="Aluno:" class="form-control" id="exampleInputEmail1" />
-                    </div>
-                    <div class="form-group">
-                         
-                       
-                        <input type="password" placeholder="Senha:" class="form-control" id="exampleInputPassword1" />
-                    </div>
+                        
+                            <button type="submit" class="btn btn-lg btn-primary btn-block">
+                                Entrar
+                            </button>
                     
-                    
-                        <button type="submit" class="btn btn-lg btn-primary btn-block">
-                            Entrar
-                        </button>
-                
-                </form>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                </div>
             </div>
-            <div class="col-md-4">
-            </div>
+          
         </div>
 
-      
-    </div>
-
-    <div class="row">
-     <footer class="footer" >
-      <div class="container">
-      <br><br><hr>
-        <p align="center" class="text-muted">Portal do Aluno 2016</p>
+        <footer class="footer">
+      <div class="container" align="center">
+        <span class="text-muted">Portal do Aluno 2016.</span>
       </div>
     </footer>
-    </div>
 
-    </body>
+       
+        </body>
 </html>

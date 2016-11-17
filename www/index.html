@@ -18,49 +18,59 @@
     </head>
         <body ng-app="app" ng-controller="appController">
 
-
-
     	  <div class="container-fluid">
-             <div class="row">
-                <div class="col-md-4">
-                </div>
+             
+             <div class="row" ng-if="exibir=='login'">
+                <div class="col-md-4"></div>
                 <div class="col-md-4">
                   <div class="page-header">
                     <h1 align="center">
                         Portal do Aluno
                     </h1>
-            </div>
-                  
-                    <form role="form">
+                 </div>
+                  <form role="form">
                         <div class="form-group">
-                             
-                            
                             <input type="text" style="text-align: center" ng-model="aluno.ra" Mask="9999-999" placeholder="Aluno" class="form-control" />
                         </div>
                         <div class="form-group">
-                             
-                           
                             <input type="password" placeholder="Senha"   style="text-align: center" maxlength="6" class="form-control"  />
                         </div>
-                        
-                        
-                            <button type="submit" ng-click="excluir()" class="btn btn-lg btn-primary btn-block">
-                                Entrar
-                            </button>
-                    
-                    </form>
+                            <button type="button" ng-click="acessar()" class="btn btn-lg btn-primary btn-block">Entrar</button>
+                   </form>
                 </div>
                 <div class="col-md-4">
                 </div>
             </div>
-          
+
+
+
+            <div class="row" ng-if="exibir=='notas'">
+                <br><br><br>
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Disciplinas Matriculadas
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <footer class="footer">
-      <div class="container" align="center">
-        <span class="text-muted">Portal do Aluno 2016.</span>
-      </div>
-    </footer>
+            <div class="container" align="center">
+                <span class="text-muted">Portal do Aluno 2016</span>
+             </div>
+        </footer>
+
+
+
 
        
         </body>

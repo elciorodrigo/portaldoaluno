@@ -3,10 +3,12 @@ var module = angular.module("app", ['ngMask']);
 module.controller("appController", [ '$scope', 'Servico', function ($scope, Servico) {
 
   
+    $scope.exibir = "login";
 
+    $scope.acessar = function () {   
 
-    $scope.excluir = function () {   
-          alert( 'teste');
+          $scope.exibir = "notas";
+         
          
                                   
     };

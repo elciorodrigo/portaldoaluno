@@ -10,6 +10,8 @@
     <content src="index.html" />
     <access origin="*" />
 	
+	<platform name="ios" />
 	<platform name="android" />
+	<platform name="winphone" />
 	
 </widget>

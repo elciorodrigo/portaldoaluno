@@ -2,11 +2,76 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
         <title>Portal Do Aluno</title>
+
+         <link href="css/bootstrap.min.css" rel="stylesheet">	
+       
+        <script src="js/angular.js"></script>
+        <script src="js/ngMask.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/services.js"></script>
+        <link href="css/style.css" rel="stylesheet">
+
     </head>
-    <body>
-    <h1>teste 123</h1>
-        <script type="text/javascript" src="cordova.js"></script>
-    </body>
+        <body ng-app="app" ng-controller="appController">
+
+    	  <div class="container-fluid">
+             
+             <div class="row" ng-if="exibir=='login'">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                  <div class="page-header">
+                    <h1 align="center">
+                        Portal do Aluno
+                    </h1>
+                 </div>
+                  <form role="form">
+                        <div class="form-group">
+                            <input type="text" style="text-align: center" ng-model="aluno.ra" Mask="9999-999" placeholder="Aluno" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Senha"   style="text-align: center" maxlength="6" class="form-control"  />
+                        </div>
+                            <button type="button" ng-click="acessar()" class="btn btn-lg btn-primary btn-block">Entrar</button>
+                   </form>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+
+
+
+            <div class="row" ng-if="exibir=='notas'">
+                <br><br><br>
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Disciplinas Matriculadas
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="container" align="center">
+                <span class="text-muted">Portal do Aluno 2016</span>
+             </div>
+        </footer>
+
+
+
+
+       
+        </body>
 </html>

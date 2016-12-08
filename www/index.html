@@ -42,12 +42,10 @@
                 </div>
             </div>
 
-
-
             <div class="row" ng-if="exibir=='notas'">
                 <br><br><br>
                 <div class="col-md-12">
-                    <div class="panel panel-primary">
+                    <div class="panel panel-primary" style="min-width: 330px">
                         <div class="panel-heading">
                             <h3 class="panel-title" style="text-align: center;">
                                 Disciplinas Matriculadas
@@ -55,25 +53,25 @@
                         </div>
                         <div class="panel-body">
                              <table class="table table-hover table-striped table-bordered" style="text-align: center;">
-                                        <thead class='header'>
-                                            <tr>
-                                                <th>Matéria</th>
-                                                <th>Faltas</th>
-                                                <th>Nota 1</th>
-                                                <th>Nota 2</th>
-                                                <th>Sub</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr ng-repeat="x in alunosDisciplinas">
-                                                <td>{{x.disciplina.descricao}}</td>
-                                                <td>{{x.faltas}}</td>
-                                                <td>{{x.nota1}}</td>
-                                                <td>{{x.nota2}}</td>
-                                                <td>{{x.sub}}</td>
-                                            </tr>
-                                       </tbody> 
-                                    </table>
+                                    <thead class='header'>
+                                        <tr>
+                                            <th>Matéria</th>
+                                            <th>Faltas</th>
+                                            <th>Nota 1</th>
+                                            <th>Nota 2</th>
+                                            <th>Sub</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="x in alunosDisciplinas">
+                                            <td>{{x.disciplina.descricao}}</td>
+                                            <td>{{x.faltas}}</td>
+                                            <td>{{x.nota1}}</td>
+                                            <td>{{x.nota2}}</td>
+                                            <td>{{x.sub}}</td>
+                                        </tr>
+                                   </tbody> 
+                              </table>
                         </div>
                        
                     </div>
@@ -82,7 +80,7 @@
 
         </div>
 
-        <footer class="footer">
+        <footer class="footer" style="min-width: 330px">
             <div class="container" align="center">
                 <span class="text-muted">Portal do Aluno 2016</span>
              </div>

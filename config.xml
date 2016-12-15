@@ -9,7 +9,13 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-	
+	<allow-intent href="http://*/*" />
+	<allow-navigation href="http://*/*" />
+	<allow-navigation href="*"/>
+	<access origin="*"></access>
+	<allow-navigation href="*" />
+
+
 	<platform name="ios" />
 	<platform name="android" />
 	<platform name="winphone" />

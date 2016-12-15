@@ -16,7 +16,7 @@ module.controller("appController", [ '$scope', 'Servico', function ($scope, Serv
     	Servico.acessar(aluno).success(function (data){
            $scope.alunosDisciplinas = data;
           }).error(function(){
-            alert('Erro ao efetuar o login');
+            alert('Erro ao efetuar o login, Favor verificar os dados fornecidos');
           });
 
          
